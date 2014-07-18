@@ -1,4 +1,4 @@
-.wrapper, footer {
+section.content, header, footer {
   @include container;
 
   @include breakpoint($tablet-and-above) {
@@ -18,13 +18,5 @@
 }
 
 @include breakpoint($tablet-and-above) {
-  .wrapper {
-    nav {
-      @include span(first 3 of 12);
-    }
 
-    .content {
-      @include span(last 9 of 12);
-    }
-  }
 }

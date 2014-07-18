@@ -7,6 +7,7 @@ compass_config do |config|
 end
 
 # Pages
+page '/', layout: 'home'
 page '/sitemap.xml', layout: false
 
 # Helpers
