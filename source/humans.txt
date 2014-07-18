@@ -1,8 +1,13 @@
 # humanstxt.org/
-# The humans responsible
 
 # TEAM
 
-    Tom Bryan -- Designer -- @tombryan
+  Produced by Geeks of London:
+    Cristiano Betta (@cbetta)
+    Kevin Prince (@nextgengames)
+    Melinda Seckington (@mseckington)
+    Robert Lee-Cann (@leeky)
 
 # THANKS
+
+    Tom Bryan (@tombryan) for the Middleman Starter template
