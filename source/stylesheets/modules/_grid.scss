@@ -1,0 +1,30 @@
+.wrapper, footer {
+  @include container;
+
+  @include breakpoint($tablet-and-above) {
+    @include container;
+  }
+
+  @include breakpoint($desktop-and-above) {
+    @include container;
+
+    @if $lt-ie9 {
+      width: pxtoem(1024px);
+    }
+    @else {
+      max-width: pxtoem(1024px);
+    }
+  }
+}
+
+@include breakpoint($tablet-and-above) {
+  .wrapper {
+    nav {
+      @include span(first 3 of 12);
+    }
+
+    .content {
+      @include span(last 9 of 12);
+    }
+  }
+}
