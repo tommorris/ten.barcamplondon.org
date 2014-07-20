@@ -1,5 +1,5 @@
 section, header, footer {
-  @include container;
+  @include container(12);
   margin-left: gutters();
   margin-right: gutters();
 
@@ -19,6 +19,21 @@ section, header, footer {
   }
 }
 
-@include breakpoint($tablet-and-above) {
 
+@include breakpoint($tablet-and-above) {
+  section {
+    width: span(8);
+    margin-left: span(2 wide);
+    margin-right: span(2 wide);
+  }
 }
+
+/*
+@include breakpoint($tablet-and-above) {
+  body { color: red !important }
+}
+
+@include breakpoint($desktop-and-above) {
+  body { color: blue !important }
+}
+*/

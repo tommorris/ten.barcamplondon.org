@@ -26,7 +26,7 @@ a {
 }
 
 h1, h2 {
-  color: darken($secondary, 20%);
+  color: darken($secondary, 10%);
   font-family: 'Montserrat', 'Lucida Grande', tahoma, helvetica, arial, sans-serif;
   font-weight: 700;
 }
@@ -40,16 +40,16 @@ p {
 
   &.call-to-action {
     @include leader(0);
-    @include trailer(1);
+    @include trailer(2);
 
     a {
       background-color: $secondary;
-      border: 2px $primary solid;
       padding: rhythm(0.5);
+      width: span(6 of 12);
       color: $primary;
-      text-decoration: none;
       @include transition-property(background-color);
       @include transition-duration(0.5s);
+      font-size: 120%;
 
       &:hover, &:focus {
         background-color: lighten($secondary, 20%);
@@ -71,30 +71,43 @@ ul, ol {
 
 h1, .h1 {
   @include adjust-font-size-to(36px);
-  @include leader(0);
+  @include leader(1,36px);
   @include trailer(0);
 }
 
 h2, .h2 {
   @include adjust-font-size-to(24px);
-  @include leader(0);
+  @include leader(1,24px);
   @include trailer(0);
 }
 
 h3, .h3 {
   @include adjust-font-size-to(20px);
-  @include leader(0);
+  @include leader(1,20px);
   @include trailer(1, 20px);
 }
 
 // Content
 .content-wrapper {
   background-color: #fff;
-  background-image: image-url('bigben.png');
-  background-position: left bottom;
-  background-repeat: no-repeat;
   padding-top: rhythm(1);
   padding-bottom: rhythm(1.5);
+  @include transition-property(background-position);
+  @include transition-duration(0.5s);
+}
+
+@include breakpoint($tablet-and-above) {
+  .content-wrapper {
+    background-image: image-url('bigben.png');
+    background-position: -64px bottom;
+    background-repeat: no-repeat;
+  }
+}
+
+@include breakpoint($desktop-and-above) {
+  .content-wrapper {
+    background-position: 0px bottom;
+  }
 }
 
 section.content {
@@ -121,9 +134,12 @@ section.sponsors {
     margin: 0;
 
     @include breakpoint($tablet-and-above) {
-      @include gallery(4 of 12);
-
+      @include gallery(6 of 12);
       img { width: 100%; }
+    }
+
+    @include breakpoint($desktop-and-above) {
+      @include gallery(4 of 12);
     }
 
     a {
@@ -138,8 +154,8 @@ section.sponsors {
 // Header
 .header-wrapper {
   background-color: $primary;
-  padding-top: rhythm(1);
-  padding-bottom: rhythm(1);
+  padding-top: rhythm(0.5);
+  padding-bottom: rhythm(0.5);
 }
 
 header {

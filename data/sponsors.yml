@@ -1,7 +1,11 @@
 microsoft:
-    name: Microsoft
-    link: http://microsoft.com/uk/
+  name: Microsoft
+  link: http://microsoft.com/uk/
 
 sendgrid:
-    name: SendGrid
-    link: http://sendgrid.com/
+  name: SendGrid
+  link: http://sendgrid.com/
+
+paypal:
+  name: PayPal
+  link: https://www.paypal.com/uk/
