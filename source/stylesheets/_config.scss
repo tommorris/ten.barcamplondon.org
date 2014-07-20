@@ -17,7 +17,7 @@ $round-to-nearest-half-line: true;
 
 // Colour palette
 // ------------------------------------------------
-$primary: #233030;
+$primary: #2c3030;
 $secondary: #edcf07;
 $tertinary: #b51e2a;
 
@@ -30,7 +30,7 @@ $helvetica: "Helvetica Neue", Helvetica, Arial, sans-serif;
 // Grid settings
 $susy: (
   columns: 12,
-  gutters: 1
+  gutters: 1/2
 );
 
 // Breakpoints

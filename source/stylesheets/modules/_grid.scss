@@ -1,5 +1,7 @@
-section.content, header, footer {
+section, header, footer {
   @include container;
+  margin-left: gutters();
+  margin-right: gutters();
 
   @include breakpoint($tablet-and-above) {
     @include container;
