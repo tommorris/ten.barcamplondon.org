@@ -24,7 +24,7 @@ helpers do
 end
 
 activate :livereload
-activate :asset_hash
+# activate :asset_hash
 activate :directory_indexes
 activate :blog
 

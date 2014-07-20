@@ -8,12 +8,12 @@
 
 // The basics
 html {
-  font-family: 'Libre Baskerville', georgia, 'times new roman', times, serif;
+  font-family: 'Merriweather:400,700:latin', georgia, 'times new roman', times, serif;
   height: 100%;
 }
 
 body {
-  background-color: #fff;
+  background-color: lighten($primary, 66%);
   height: 100%;
   padding: 0;
 }
@@ -21,14 +21,14 @@ body {
 a {
   color: $primary;
   &:hover, &:focus {
-    color: darken($primary, 20%);
+    color: lighten($primary, 33%);
   }
 }
 
 h1, h2 {
-  color: $primary;
-  font-family: 'Montserrat', 'Gill Sans', tahoma, 'Lucida Grande', helvetica, arial, sans-serif;
-  font-weight: 400;
+  color: darken($secondary, 20%);
+  font-family: 'Montserrat', 'Lucida Grande', tahoma, helvetica, arial, sans-serif;
+  font-weight: 700;
 }
 
 p {
@@ -39,18 +39,21 @@ p {
   }
 
   &.call-to-action {
-    @include leader(1);
+    @include leader(2);
     @include trailer(1);
 
     a {
       background-color: $secondary;
+      border: 2px $primary solid;
       padding: rhythm(0.5);
-      color: #fff;
+      color: $primary;
+      text-decoration: none;
       @include transition-property(background-color);
       @include transition-duration(0.5s);
 
       &:hover, &:focus {
-        background-color: darken($secondary, 50%);
+        background-color: lighten($secondary, 20%);
+        text-decoration: underline;
       }
     }
   }
@@ -69,13 +72,13 @@ ul, ol {
 h1, .h1 {
   @include adjust-font-size-to(36px);
   @include leader(0);
-  @include trailer(1, 36px);
+  @include trailer(0);
 }
 
 h2, .h2 {
   @include adjust-font-size-to(24px);
   @include leader(0);
-  @include trailer(1, 24px);
+  @include trailer(0);
 }
 
 h3, .h3 {
@@ -84,17 +87,36 @@ h3, .h3 {
   @include trailer(1, 20px);
 }
 
+// Content
+.content-wrapper {
+  background-color: #fff;
+  background-image: image-url('bigben.png');
+  background-position: left top;
+  background-repeat: no-repeat;
+  padding-top: rhythm(1);
+  padding-bottom: rhythm(1.5);
+}
+
 // Header
-header {
+.header-wrapper {
   background-color: $primary;
+}
+
+header {
+  text-align: center;
+
   a {
     color: #fff;
+
+    &:hover, &:focus { color: $secondary; }
   }
 
-  h1 {
-    @include trailer(1, 36px);
-    @include adjust-font-size-to(36px);
-    color: $secondary;
+  img {
+    width: 95%;
+
+    @include breakpoint($tablet-and-above) {
+      width: 50%;
+    }
   }
 
   h2 {
@@ -103,4 +125,20 @@ header {
     @include adjust-font-size-to(14px);
     @include trailer(0);
   }
+}
+
+// Footer
+.footer-wrapper {
+  background-color: lighten($primary, 66%);
+  padding-top: rhythm(1);
+  padding-bottom: rhythm(1);
+}
+
+footer {
+}
+
+// Home Page
+p.homepage-intro {
+  font-weight: bold;
+  @include adjust-font-size-to(20px);
 }
