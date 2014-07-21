@@ -8,12 +8,14 @@
 
 // The basics
 html {
-  font-family: 'Merriweather:400,700:latin', georgia, 'times new roman', times, serif;
+  font-family: 'Montserrat', 'Lucida Grande', tahoma, helvetica, arial, sans-serif;
+  font-weight: 400;
   height: 100%;
 }
 
 body {
   background-color: lighten($primary, 66%);
+  color: lighten($primary, 15%);
   height: 100%;
   padding: 0;
 }
@@ -27,7 +29,6 @@ a {
 
 h1, h2 {
   color: darken($secondary, 10%);
-  font-family: 'Montserrat', 'Lucida Grande', tahoma, helvetica, arial, sans-serif;
   font-weight: 700;
 }
 
@@ -195,6 +196,7 @@ footer {
 
 // Home Page
 p.homepage-intro {
-  font-weight: bold;
+  font-weight: 700;
+  color: $primary;
   @include adjust-font-size-to(20px);
 }
