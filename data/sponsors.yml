@@ -2,10 +2,14 @@ microsoft:
   name: Microsoft
   link: http://microsoft.com/uk/
 
+paypal:
+  name: PayPal
+  link: https://www.paypal.com/uk/
+
 sendgrid:
   name: SendGrid
   link: http://sendgrid.com/
 
-paypal:
-  name: PayPal
-  link: https://www.paypal.com/uk/
+twilio:
+  name: twilio
+  link: http://www.twilio.com/
