@@ -21,7 +21,7 @@ section, header, footer {
 
 
 @include breakpoint($tablet-and-above) {
-  section {
+  section, footer {
     width: span(8);
     margin-left: span(2 wide);
     margin-right: span(2 wide);
