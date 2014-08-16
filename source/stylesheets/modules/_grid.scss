@@ -2,7 +2,7 @@
   @include clearfix();
 }
 
-header, footer, article {
+header, footer, .main {
   @include container();
   max-width: 90%;
 
@@ -16,30 +16,7 @@ header, footer, article {
   }
 }
 
-// header, footer {
-//   @include full();
-
-// }
-
 // article {
-//   @include container(12 show);
-
-//   @include breakpoint($desktop-and-above) {
-//     max-width: pxtoem(1024px);
-//   }
-// }
-// @include breakpoint($tablet-and-above) {
-//   article {
-//     @include span(10);
-//     @include pre(1);
-//     @include post(last 1);
-//   }
-// }
-
-// @include breakpoint($desktop-and-above) {
-//   article {
-//     @include span(8);
-//     @include pre(2);
-//     @include post(last 2);
-//   }
+//   @include span(last 9);
+//   @include pre(3);
 // }

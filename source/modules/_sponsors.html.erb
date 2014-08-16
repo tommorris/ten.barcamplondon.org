@@ -1,8 +1,17 @@
 <div class="sponsors-wrapper"><section class="sponsors">
+  <h4>Sponsors</h4>
   <ul>
 <% data.sponsors.each do |sponsor| -%>
-    <li><%= link_to image_tag("sponsors/#{sponsor.last['name'].downcase}.png", title: "#{sponsor.last['name']}"), sponsor.last['link'] %></li>
+  <% if sponsor.last['premium'] -%>
+    <li class="premium-sponsor"><%= link_to image_tag("sponsors/#{sponsor.last['name'].downcase}.png", title: "#{sponsor.last['name']}"), sponsor.last['link'] %></li>
+  <% end %>
 <% end %>
-     <li><%= link_to image_tag("sponsors/your-company-here.png", title: "Your Company Here!"), 'mailto:cristiano@barcamplondon.org' %></li>
   </ul>
+  <ul>
+<% data.sponsors.each do |sponsor| -%>
+  <% unless sponsor.last['premium'] -%>
+    <li class="sponsor"><%= link_to image_tag("sponsors/#{sponsor.last['name'].downcase}.png", title: "#{sponsor.last['name']}"), sponsor.last['link'] %></li>
+  <% end %>
+<% end %>
+   </ul>
 </section></div>

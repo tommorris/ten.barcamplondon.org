@@ -35,14 +35,12 @@
   </head>
 
   <body>
-    <div class="header-wrapper"><header>
-      <h2><a href="http://geeksoflondon.com/">Geeks of London</a> and <a href="http://www.microsoft.com/en-gb/default.aspx">Microsoft</a> proudly present</h2>
-      <a href="/"><%= image_tag 'logo.png', title: 'BarCamp London X' %></a>
-    </header></div>
+    <%= partial 'modules/header' %>
 
-    <div class="article-wrapper"><article>
-      <%= yield %>
-    </article></div>
+    <div class="main">
+      <nav class="secondary"></nav>
+      <article><%= yield %></article>
+    </div>
 
     <%= partial 'modules/sponsors' %>
 

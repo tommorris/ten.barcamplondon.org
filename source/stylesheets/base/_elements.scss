@@ -50,18 +50,21 @@ p {
 }
 
 // Lists
-ul, ol {
-  @include leader(0);
-  @include trailer(1);
-  li {
-    @include trailer(0);
+.main {
+  ul, ol {
+    @include leader(0);
+    @include trailer(1);
+    li {
+      @include trailer(0.5);
+    }
+  }
+
+  ul {
+    list-style: square outside none;
   }
 }
 
-ul {
-  list-style: square outside none;
-}
-
+// Headings
 h1, .h1 {
   @include adjust-font-size-to(39px);
   @include leader(1,39px);

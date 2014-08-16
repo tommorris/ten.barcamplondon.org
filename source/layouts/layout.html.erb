@@ -18,9 +18,9 @@
       s.parentNode.insertBefore(wf, s);
     })(); </script>
     <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
-    <title><%= current_page.data.title + " :: " if current_page.data.title %>BarCamp London X</title>
+    <title>BarCamp London X</title>
     <meta name="description" content"A free-to-attend weekend unconference for designers, developers and geeks of all types at Microsoft's Central London offices on the 27th-28th September 2014.">
-    <meta name="author" content="Geeks of London">
+    <meta name="author" content="Robert Lee-Cann">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="apple-touch-icon-144x144-precomposed.png" />
@@ -35,15 +35,12 @@
   </head>
 
   <body>
-    <div class="header-wrapper"><header>
-      <h2><a href="http://geeksoflondon.com/">Geeks of London</a> and <a href="http://www.microsoft.com/en-gb/default.aspx">Microsoft</a> proudly present</h2>
-      <a href="/"><%= image_tag 'logo.png', title: 'BarCamp London X' %></a>
-    </header></div>
+    <%= partial 'modules/header' %>
 
-    <div class="article-wrapper"><article>
-      <h1><%= current_page.data.title %></h1>
-      <%= yield %>
-    </article></div>
+    <div class="main">
+      <nav class="secondary"></nav>
+      <article><h1><%= current_page.data.title %></h1><%= yield %></article>
+    </div>
 
     <%= partial 'modules/sponsors' %>
 
