@@ -27,7 +27,10 @@ activate :livereload
 # activate :asset_hash
 activate :relative_assets
 activate :directory_indexes
-activate :blog
+
+activate :blog do |blog|
+  blog.prefix = 'news'
+end
 
 # Deploy configuration
 activate :deploy do |deploy|

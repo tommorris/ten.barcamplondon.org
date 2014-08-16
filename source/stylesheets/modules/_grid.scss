@@ -1,13 +1,7 @@
 section, article, header, footer {
   @include container();
 
-  @include breakpoint($tablet-and-above) {
-    @include container();
-  }
-
   @include breakpoint($desktop-and-above) {
-    @include container();
-
     @if $lt-ie9 {
       width: pxtoem(1024px);
     }
@@ -18,7 +12,7 @@ section, article, header, footer {
 }
 
 @include breakpoint($tablet-and-above) {
-  section, article {
+  article {
     @include span(10);
     @include pre(1);
     @include post(last 1);
@@ -26,7 +20,7 @@ section, article, header, footer {
 }
 
 @include breakpoint($desktop-and-above) {
-  section, article {
+  article {
     @include span(8);
     @include pre(2);
     @include post(last 2);

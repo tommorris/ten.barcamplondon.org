@@ -1,0 +1,37 @@
+.sponsors-wrapper {
+  background-color: $secondary;
+  @include full();
+}
+
+section.sponsors {
+  @include layout(12 1/4 split show);
+  @include full();
+  @include clearfix();
+  padding-top: gutter();
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    padding: 0;
+    margin: 0;
+
+    @include breakpoint($tablet-and-above) {
+      @include gallery(6 of 12);
+    }
+
+    @include breakpoint($desktop-and-above) {
+      @include gallery(4 of 12);
+    }
+
+    a {
+      display: block;
+      text-align: center;
+    }
+
+    img { width: 100% }
+  }
+}
