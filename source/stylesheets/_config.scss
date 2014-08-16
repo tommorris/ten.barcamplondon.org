@@ -29,9 +29,10 @@ $main-font-stack: 'Montserrat', 'Lucida Grande', tahoma, helvetica, arial, sans-
 // Grid settings
 $susy: (
   columns: 12,
-  gutters: 1/4
+  gutters: 1,
+  gutter-position: split
 );
 
 // Breakpoints
-$tablet-and-above: pxtoem(569px);
-$desktop-and-above: pxtoem(1025px);
+$tablet-and-above: pxtoem(630px);
+$desktop-and-above: pxtoem(1024px);

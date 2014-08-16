@@ -81,13 +81,8 @@ h3, .h3 {
 }
 
 // Content
-.article-wrapper {
+.main {
   background-color: #fff;
-
-  article {
-    @include clearfix;
-    @include trailer(1);
-  }
 }
 
 // Header
@@ -123,12 +118,9 @@ header {
 }
 
 // Footer
-.footer-wrapper {
-  padding: gutter() auto;
-}
-
 footer {
   text-align: center;
+  @include trailer(1, 15px);
 
   p {
     @include adjust-font-size-to(15px);
