@@ -1,14 +1,12 @@
 section, header, footer {
-  @include container(12);
-  margin-left: gutters();
-  margin-right: gutters();
+  @include container();
 
   @include breakpoint($tablet-and-above) {
-    @include container;
+    @include container();
   }
 
   @include breakpoint($desktop-and-above) {
-    @include container;
+    @include container();
 
     @if $lt-ie9 {
       width: pxtoem(1024px);
@@ -19,21 +17,10 @@ section, header, footer {
   }
 }
 
-
 @include breakpoint($tablet-and-above) {
   section, footer {
-    width: span(8);
-    margin-left: span(2 wide);
-    margin-right: span(2 wide);
+    @include span(8);
+    @include pre(2);
+    @include post(last 2);
   }
 }
-
-/*
-@include breakpoint($tablet-and-above) {
-  body { color: red !important }
-}
-
-@include breakpoint($desktop-and-above) {
-  body { color: blue !important }
-}
-*/

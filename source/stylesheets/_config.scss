@@ -12,18 +12,17 @@ $legacy-support-for-ie8: $lt-ie9;
 // Vertical rhythm settings
 // ------------------------------------------------
 $base-font-size: 18px;
-$base-line-height: 30px;
+$base-line-height: 27px;
 $round-to-nearest-half-line: true;
 
 // Colour palette
 // ------------------------------------------------
-$primary: #2c3030;
-$secondary: #edcf07;
-$tertinary: #b51e2a;
+$primary: #c00;
+$secondary: #666;
 
 // Font stacks
 // ------------------------------------------------
-$helvetica: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$main-font-stack: 'Montserrat', 'Lucida Grande', tahoma, helvetica, arial, sans-serif;
 
 // Susy
 // ------------------------
