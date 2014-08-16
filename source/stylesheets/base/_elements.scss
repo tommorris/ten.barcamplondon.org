@@ -37,7 +37,7 @@ a {
   }
 }
 
-h1, h2 {
+h1, h2, h3 {
   color: $primary;
   font-weight: 700;
 }
@@ -54,38 +54,41 @@ p {
 ul, ol {
   @include leader(0);
   @include trailer(1);
-  padding-left: rhythm(1.5);
   li {
     @include trailer(0);
   }
 }
 
+ul {
+  list-style: square outside none;
+}
+
 h1, .h1 {
-  @include adjust-font-size-to(44px);
-  @include leader(1,44px);
-  @include trailer(0);
+  @include adjust-font-size-to(39px);
+  @include leader(1,39px);
+  @include trailer(0.5, 39px);
 }
 
 h2, .h2 {
-  @include adjust-font-size-to(24px);
-  @include leader(1,24px);
-  @include trailer(0);
+  @include adjust-font-size-to(31px);
+  @include leader(1.5,31px);
+  @include trailer(0.5, 31px);
 }
 
 h3, .h3 {
-  @include adjust-font-size-to(20px);
-  @include leader(1,20px);
-  @include trailer(1, 20px);
+  @include adjust-font-size-to(24px);
+  @include leader(1,24px);
+  @include trailer(1,24px);
 }
 
 // Content
-.content-wrapper {
+.article-wrapper {
   background-color: #fff;
   padding-top: rhythm(1);
   padding-bottom: rhythm(1.5);
 }
 
-section.content {
+article {
   @include clearfix;
 }
 

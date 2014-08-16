@@ -1,4 +1,4 @@
-section, header, footer {
+section, article, header, footer {
   @include container();
 
   @include breakpoint($tablet-and-above) {
@@ -18,7 +18,15 @@ section, header, footer {
 }
 
 @include breakpoint($tablet-and-above) {
-  section, footer {
+  section, article {
+    @include span(10);
+    @include pre(1);
+    @include post(last 1);
+  }
+}
+
+@include breakpoint($desktop-and-above) {
+  section, article {
     @include span(8);
     @include pre(2);
     @include post(last 2);
