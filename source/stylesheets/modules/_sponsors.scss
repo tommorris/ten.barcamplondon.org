@@ -12,7 +12,7 @@ section.sponsors {
 
   @include breakpoint($desktop-and-above) {
     width: 90%;
-    max-width: pxtoem(1024px);
+    max-width: pxtoem(960px);
   }
 
   h4 {

@@ -88,38 +88,6 @@ h3, .h3 {
   background-color: #fff;
 }
 
-// Header
-.header-wrapper {
-  background-color: $primary;
-  padding-top: rhythm(0.5);
-  padding-bottom: rhythm(0.5);
-}
-
-header {
-  text-align: center;
-
-  a {
-    color: #fff;
-
-    &:hover, &:focus { color: $primary; }
-  }
-
-  img {
-    width: 95%;
-
-    @include breakpoint($tablet-and-above) {
-      width: 50%;
-    }
-  }
-
-  h2 {
-    color: #fff;
-    text-transform: uppercase;
-    @include adjust-font-size-to(14px);
-    @include trailer(0);
-  }
-}
-
 // Footer
 footer {
   text-align: center;
