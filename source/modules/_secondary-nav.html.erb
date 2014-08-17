@@ -1,0 +1,18 @@
+<% prefix = current_page.path.split('/').first %>
+
+<% unless prefix == 'news' %>
+  <% resources = sitemap.resources.select{ |p| p.path.start_with?(prefix) && p.ext == ".html" && p.data.title } %>
+  <% resources = resources.sort{|x,y| x.data.title <=> y.data.title } %>
+
+  <% if resources.size > 1 %>
+  <div class="secondary-nav-wrapper">
+    <nav class="secondary-nav">
+      <ul>
+        <% resources.each do |resource| %>
+          <li><%= link_to resource.data.title, resource.url %></li>
+        <% end %>
+      </ul>
+    </nav>
+  </div>
+  <% end %>
+<% end %>

@@ -1,8 +1,8 @@
-.main, .hero-wrapper, .footer-wrapper {
+.main, .hero-wrapper, .footer-wrapper, .news-links-wrapper, .secondary-nav-wrapper {
   @include clearfix();
 }
 
-header, footer, .main, .hero {
+header, footer, .main, .hero, .news-links, .secondary-nav {
   @include container();
   max-width: 90%;
 
@@ -15,8 +15,3 @@ header, footer, .main, .hero {
     max-width: pxtoem(960px);
   }
 }
-
-// article {
-//   @include span(last 9);
-//   @include pre(3);
-// }

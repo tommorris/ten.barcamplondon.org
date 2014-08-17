@@ -1,0 +1,32 @@
+.news-links-wrapper {
+  background-color: lighten($secondary, 50);
+}
+
+section.news-links {
+  @include layout(3 1/4 after);
+  @include trailer(1);
+  @include leader(1);
+
+  h4 {
+    color: $primary;
+
+    a {
+      color: $primary;
+      text-decoration: none;
+    }
+  }
+
+  ul {
+    @include breakpoint($desktop-and-above) {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+
+      li {
+        @include gallery(1 of 3);
+        padding: 0;
+        margin: 0;
+      }
+    }
+  }
+}

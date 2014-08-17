@@ -36,15 +36,20 @@
 
   <body>
     <%= partial 'modules/header' %>
-    <%= partial 'modules/hero' %>
+    <%= partial 'modules/secondary-nav' %>
 
-    <%= partial 'modules/news-links' %>
-    <%= partial 'modules/sponsors' %>
+    <div class="main">
+      <article><h1><%= current_page.data.title %></h1><%= yield %></article>
+      <p><%= link_to '/news/', 'More updates...' %></p>
+    </div>
+
+    <%# <%= partial 'modules/sponsors' %1> %>
 
     <div class="footer-wrapper"><footer>
         <p>&copy; 2014 <a href="http://geeksoflondon.com/">Geeks of London Ltd</a> - <em><a href="/colophon/">Colophon</a></em></p>
     </footer></div>
 
+    <%# javascript_include_tag "//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js" %>
     <%= javascript_include_tag "plugins", "script" %>
   </body>
 </html>

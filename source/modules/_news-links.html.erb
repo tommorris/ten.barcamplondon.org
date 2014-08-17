@@ -1,0 +1,10 @@
+<div class="news-links-wrapper">
+  <section class="news-links">
+    <h4><a href="/news/">Latest News</a></h4>
+    <ul>
+      <% blog.articles[0...2].each do |article| %>
+        <li><%= link_to article.title, article %></li>
+      <% end %>
+    </ul>
+  </section>
+</div>
