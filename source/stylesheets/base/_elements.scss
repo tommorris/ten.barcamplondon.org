@@ -88,6 +88,10 @@ h3, .h3 {
   background-color: #fff;
 }
 
+article {
+  @include trailer(2);
+}
+
 // Footer
 footer {
   text-align: center;

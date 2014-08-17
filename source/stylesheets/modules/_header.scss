@@ -2,29 +2,67 @@
   @include clearfix();
   padding-top: gutter();
   padding-bottom: gutter();
-  border-bottom: 1px solid $secondary;
   background-color: rgba(255,255,255,0.9);
+  @include transition-property(top);
+  @include transition-duration(0.75s);
+  @include transition-timing-function(ease-in);
 
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
+  &.headhesive {
+    position: fixed;
+    top: -200px;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+  }
+
+  &.headhesive--unstick {
+    top: -200px;
+    @include transition-duration(0.2s);
+  }
+
+  &.headhesive--stick {
+    top: 0;
+    display: block;
+    padding-top: 0.25em;
+    padding-bottom: 0.25em;
+    color: #fff;
+    background-color: rgba(200,0,0,0.9);
+
+    a {
+      color: #fff;
+
+      &:hover, &:focus {
+        border-bottom: 3px solid #fff;
+      }
+
+      &.button {
+        color: #fff;
+        border: 3px solid #fff;
+        padding: 0.5em;
+
+        &:hover, &:focus {
+          background-color: #fff;
+          color: $primary;
+        }
+      }
+    }
+  }
 }
 
 header {
+  img { max-width: 90%; text-align: center; }
   ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
-    @include span(8 last);
-    text-align: right;
+    text-align: center;
   }
 
   li {
-    margin-top: gutter();
     display: inline-block;
     vertical-align: middle;
     margin-right: gutter();
+    margin-top: gutter()/2;
 
     a {
       text-decoration: none;
@@ -39,7 +77,7 @@ header {
       &.button {
         color: $primary;
         border: 3px solid $primary;
-        padding: 0.5em;
+        padding: 0.5em 1.5em;
 
         &:hover, &:focus {
           background-color: $primary;
@@ -49,9 +87,19 @@ header {
     }
   }
 
-  img {
-    @include span(4);
-    display: inline-block;
-    vertical-align: middle;
+  @include breakpoint($tablet-and-above) {
+    ul {
+      @include span(8 last);
+      text-align: right;
+
+      li a.button { padding: 0.5em }
+    }
+
+    img {
+      @include span(4);
+      display: inline-block;
+      vertical-align: middle;
+      margin-left: 0;
+    }
   }
 }
