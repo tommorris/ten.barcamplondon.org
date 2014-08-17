@@ -90,6 +90,36 @@ h3, .h3 {
 
 article {
   @include trailer(2);
+
+  figure {
+    @include breakpoint($desktop-and-above) {
+      @include span(6 last);
+
+      &.left {
+        @include span(6 first);
+
+        figcaption { text-align: left; }
+      }
+
+      &.full {
+        @include full();
+      }
+    }
+
+    figcaption {
+      text-align: right;
+      color: $secondary;
+      font-style: italic;
+      @include adjust-font-size-to(15px);
+      @include trailer(1, 15px);
+      line-height: 1.5;
+    }
+
+    img {
+      width: 100%;
+      border: 3px solid $primary;
+    }
+  }
 }
 
 // Footer

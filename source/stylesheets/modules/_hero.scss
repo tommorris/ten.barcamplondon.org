@@ -13,6 +13,6 @@
   a { color: #fff; }
 
   @include breakpoint($tablet-and-above) {
-    h1, p { @include span(8 last); }
+    h1, p { @include span(8); }
   }
 }
