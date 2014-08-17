@@ -1,8 +1,8 @@
-.main, .footer-wrapper {
+.main, .hero-wrapper, .footer-wrapper {
   @include clearfix();
 }
 
-header, footer, .main {
+header, footer, .main, .hero {
   @include container();
   max-width: 90%;
 

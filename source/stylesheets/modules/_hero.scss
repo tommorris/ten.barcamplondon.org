@@ -1,0 +1,18 @@
+.hero-wrapper {
+  background-color: $primary;
+  background-image: url(/images/hero-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  @include background-size(cover);
+  color: #fff;
+}
+
+.hero {
+  @include trailer(1);
+  h1,p  { color: #fff; @include text-shadow(rgba(0,0,0,0.5) 0 2px 2px); }
+  a { color: #fff; }
+
+  @include breakpoint($tablet-and-above) {
+    h1, p { @include span(8 last); }
+  }
+}

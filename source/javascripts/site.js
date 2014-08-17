@@ -1,5 +1,4 @@
 //= require_tree "./libs"
-//= require "./plugins"
 
 $(document).ready(function() {
 

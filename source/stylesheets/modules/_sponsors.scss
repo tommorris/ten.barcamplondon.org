@@ -1,6 +1,8 @@
 .sponsors-wrapper {
   @include clearfix();
   background-color: $secondary;
+  background-image: url(/images/sponsor-bg.png);
+
   margin-top: gutter();
   margin-bottom: gutter();
 }
