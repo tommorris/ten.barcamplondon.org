@@ -67,3 +67,10 @@ section.sponsors {
     img { width: 100% }
   }
 }
+
+ul.sponsors-page {
+  @include breakpoint($desktop-and-above) {
+    text-align: center;
+    @include column-count(3);
+  }
+}

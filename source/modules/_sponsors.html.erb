@@ -8,7 +8,7 @@
 <% end %>
   </ul>
   <ul>
-<% data.sponsors.each do |sponsor| -%>
+  <% data.sponsors.sort{|x,y| x.last['name'] <=> y.last['name'] }.each do |sponsor| -%>
   <% unless sponsor.last['premium'] -%>
     <li class="sponsor"><%= link_to image_tag("sponsors/#{sponsor.last['name'].downcase}.png", title: "#{sponsor.last['name']}"), sponsor.last['link'] %></li>
   <% end %>
