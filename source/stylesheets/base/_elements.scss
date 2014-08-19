@@ -8,27 +8,36 @@
 
 // The basics
 html {
-  font-family: 'Montserrat', 'Lucida Grande', tahoma, helvetica, arial, sans-serif;
-  font-weight: 400;
   height: 100%;
+
+  &, &.wf-active {
+    font-family: $main-font-stack;
+    font-weight: 400;
+  }
+
+  &.wf-loading, &.wf-inactive {
+    font-family: 'Lucida Grande', tahoma, helvetica, arial, sans-serif;
+
+    h1, h2, h3 { font-weight: bold }
+  }
 }
 
 body {
-  background-color: lighten($primary, 66%);
-  color: lighten($primary, 15%);
+  background-color: #fff;
+  color: #000;
   height: 100%;
   padding: 0;
 }
 
 a {
-  color: $primary;
+  color: $secondary;
   &:hover, &:focus {
-    color: lighten($primary, 33%);
+    color: lighten($secondary, 33%);
   }
 }
 
-h1, h2 {
-  color: darken($secondary, 10%);
+h1, h2, h3 {
+  color: $primary;
   font-weight: 700;
 }
 
@@ -38,166 +47,87 @@ p {
   &:last-child {
     @include trailer(0);
   }
-
-  &.call-to-action {
-    @include leader(0);
-    @include trailer(2);
-
-    a {
-      background-color: $secondary;
-      padding: rhythm(0.5);
-      width: span(6 of 12);
-      color: $primary;
-      @include transition-property(background-color);
-      @include transition-duration(0.5s);
-      font-size: 120%;
-
-      &:hover, &:focus {
-        background-color: lighten($secondary, 20%);
-        text-decoration: underline;
-      }
-    }
-  }
 }
 
 // Lists
-ul, ol {
-  @include leader(0);
-  @include trailer(1);
-  padding-left: rhythm(1.5);
-  li {
-    @include trailer(0);
+.main {
+  ul, ol {
+    @include leader(0);
+    @include trailer(1);
+    li {
+      @include trailer(0.5);
+    }
+  }
+
+  ul {
+    list-style: square outside none;
   }
 }
 
+// Headings
 h1, .h1 {
-  @include adjust-font-size-to(36px);
-  @include leader(1,36px);
-  @include trailer(0);
+  @include adjust-font-size-to(39px);
+  @include leader(1,39px);
+  @include trailer(0.5, 39px);
 }
 
 h2, .h2 {
-  @include adjust-font-size-to(24px);
-  @include leader(1,24px);
-  @include trailer(0);
+  @include adjust-font-size-to(31px);
+  @include leader(1.5,31px);
+  @include trailer(0.5, 31px);
 }
 
 h3, .h3 {
-  @include adjust-font-size-to(20px);
-  @include leader(1,20px);
-  @include trailer(1, 20px);
+  @include adjust-font-size-to(24px);
+  @include leader(1,24px);
+  @include trailer(1,24px);
 }
 
 // Content
-.content-wrapper {
+.main {
   background-color: #fff;
-  padding-top: rhythm(1);
-  padding-bottom: rhythm(1.5);
-  @include transition-property(background-position);
-  @include transition-duration(0.5s);
 }
 
-@include breakpoint($tablet-and-above) {
-  .content-wrapper {
-    background-image: image-url('bigben.png');
-    background-position: -64px bottom;
-    background-repeat: no-repeat;
-  }
-}
+article {
+  @include trailer(2);
 
-@include breakpoint($desktop-and-above) {
-  .content-wrapper {
-    background-position: 0px bottom;
-  }
-}
-
-section.content {
-  @include clearfix;
-}
-
-// Sponsors
-.sponsors-wrapper {
-  background-color: lighten($primary, 33%);
-  padding: rhythm(1.5) 0;
-}
-
-section.sponsors {
-  @include clearfix;
-
-  ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
-
-  li {
-    padding: 0 0 rhythm(0.5) 0;
-    margin: 0;
-
-    @include breakpoint($tablet-and-above) {
-      @include gallery(6 of 12);
-      img { width: 100%; }
-    }
-
+  figure {
     @include breakpoint($desktop-and-above) {
-      @include gallery(4 of 12);
+      @include span(6 last);
+
+      &.left {
+        @include span(6 first);
+
+        figcaption { text-align: left; }
+      }
+
+      &.full {
+        @include full();
+      }
     }
 
-    a {
-      display: block;
-      text-align: center;
+    figcaption {
+      text-align: right;
+      color: $secondary;
+      font-style: italic;
+      @include adjust-font-size-to(15px);
+      @include trailer(1, 15px);
+      line-height: 1.5;
     }
 
-    img { width: 90% }
-  }
-}
-
-// Header
-.header-wrapper {
-  background-color: $primary;
-  padding-top: rhythm(0.5);
-  padding-bottom: rhythm(0.5);
-}
-
-header {
-  text-align: center;
-
-  a {
-    color: #fff;
-
-    &:hover, &:focus { color: $secondary; }
-  }
-
-  img {
-    width: 95%;
-
-    @include breakpoint($tablet-and-above) {
-      width: 50%;
+    img {
+      width: 100%;
+      border: 3px solid $primary;
     }
-  }
-
-  h2 {
-    color: #fff;
-    text-transform: uppercase;
-    @include adjust-font-size-to(14px);
-    @include trailer(0);
   }
 }
 
 // Footer
-.footer-wrapper {
-  background-color: lighten($primary, 66%);
-  padding-top: rhythm(1);
-  padding-bottom: rhythm(1);
-}
-
 footer {
   text-align: center;
-}
+  @include trailer(1, 15px);
 
-// Home Page
-p.homepage-intro {
-  font-weight: 700;
-  color: $primary;
-  @include adjust-font-size-to(20px);
+  p {
+    @include adjust-font-size-to(15px);
+  }
 }

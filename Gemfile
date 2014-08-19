@@ -7,6 +7,7 @@ gem "middleman-blog"
 
 gem "builder"
 gem "middleman-sitemap"
+gem "nokogiri"
 
 # Compass plugins
 gem "susy"

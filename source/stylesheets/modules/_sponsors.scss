@@ -1,0 +1,76 @@
+.sponsors-wrapper {
+  @include clearfix();
+  background-color: $secondary;
+  background-image: url(/images/sponsor-bg.png);
+
+  margin-bottom: gutter();
+}
+
+section.sponsors {
+  @include layout(12 1/8 split);
+  @include container();
+  padding-bottom: 1em;
+
+  @include breakpoint($desktop-and-above) {
+    width: 90%;
+    max-width: pxtoem(960px);
+  }
+
+  h4 {
+    color: #fff;
+
+    a {
+      text-decoration: none;
+      color: #fff;
+    }
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    padding: 0;
+    margin: 0;
+
+    &.sponsor {
+      @include gallery(6 of 12);
+    }
+
+    @include breakpoint($tablet-and-above) {
+      &.sponsor {
+        @include gallery(4 of 12);
+      }
+
+      &.premium-sponsor {
+         @include gallery(6 of 12);
+      }
+    }
+
+    @include breakpoint($desktop-and-above) {
+      &.sponsor {
+        @include gallery(3 of 12);
+      }
+
+      &.premium-sponsor {
+        @include gallery(6 of 12);
+      }
+    }
+
+    a {
+      display: block;
+      text-align: center;
+    }
+
+    img { width: 100% }
+  }
+}
+
+ul.sponsors-page {
+  @include breakpoint($desktop-and-above) {
+    text-align: center;
+    @include column-count(3);
+  }
+}

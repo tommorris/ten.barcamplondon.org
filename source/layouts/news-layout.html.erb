@@ -40,9 +40,10 @@
 
     <div class="main">
       <article><h1><%= current_page.data.title %></h1><%= yield %></article>
+      <p><%= link_to 'More updates...', '/news/' %></p>
     </div>
 
-    <%= partial 'modules/sponsors' %>
+    <%# <%= partial 'modules/sponsors' %1> %>
 
     <div class="footer-wrapper"><footer>
         <p>&copy; 2014 <a href="http://geeksoflondon.com/">Geeks of London Ltd</a> - <em><a href="/colophon/">Colophon</a></em></p>

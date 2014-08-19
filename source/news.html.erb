@@ -1,0 +1,13 @@
+---
+title: News
+---
+
+<% blog.articles[0...5].each do |article| %>
+  <h2><a href="<%= article.url %>"><%= article.title %></a></h2>
+  <p><time><%= article.date.strftime('%b %e %Y') %></time></p>
+
+  <%= article.summary %>
+
+  <%= link_to 'Read more...', article %>
+<% end %>
+

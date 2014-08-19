@@ -1,0 +1,37 @@
+.secondary-nav-wrapper {
+  background-color: lighten($secondary, 50);
+}
+
+nav.secondary-nav {
+  @include layout(3 0 inside);
+  @include trailer(0.5);
+  @include leader(0.5);
+
+  ul {
+    @include adjust-font-size-to(15px);
+  }
+
+  @include breakpoint($tablet-and-above) {
+    ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    li {
+      display: inline-block;
+    }
+
+    a {
+      text-transform: uppercase;
+      padding-right: 2em;
+      padding-top: 0.5em;
+      padding-bottom: 0.5em;
+
+      &:hover, &:active {
+        color: $primary;
+      }
+    }
+  }
+}
+

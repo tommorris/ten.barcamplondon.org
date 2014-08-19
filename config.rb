@@ -9,6 +9,7 @@ end
 # Pages
 page '/', layout: 'home'
 page '/sitemap.xml', layout: false
+page 'news/*', layout: 'news-layout'
 
 # Helpers
 helpers do
@@ -27,7 +28,11 @@ activate :livereload
 # activate :asset_hash
 activate :relative_assets
 activate :directory_indexes
-activate :blog
+
+activate :blog do |blog|
+  blog.prefix = 'news'
+  blog.layout = 'news-layout'
+end
 
 # Deploy configuration
 activate :deploy do |deploy|

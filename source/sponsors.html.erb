@@ -1,0 +1,19 @@
+---
+title: Sponsors
+---
+<p>We simply couldn't put on BarCamp London X without the generous support of our sponsors:</p>
+
+<ul class="sponsors-page">
+<% data.sponsors.each do |sponsor| -%>
+  <% if sponsor.last['premium'] -%>
+    <li><%= link_to sponsor.last['name'], sponsor.last['link'] %></li>
+  <% end %>
+<% end %>
+<% data.sponsors.sort{|x,y| x.last['name'] <=> y.last['name']}.each do |sponsor| -%>
+  <% unless sponsor.last['premium'] -%>
+    <li><%= link_to sponsor.last['name'], sponsor.last['link'] %></li>
+  <% end %>
+<% end %>
+</ul>
+
+<p>Please <a href="mailto:cristiano@barcamplondon.org">get in touch</a> if you'd be interested in sponsoring future events.</p>

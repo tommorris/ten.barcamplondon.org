@@ -1,10 +1,12 @@
 microsoft:
   name: Microsoft
   link: http://microsoft.com/uk/
+  premium: true
 
 paypal:
   name: PayPal
-  link: https://www.paypal.com/uk/
+  link: http://developer.paypal.com/
+  premium: true
 
 sendgrid:
   name: SendGrid
@@ -29,3 +31,7 @@ vektor:
 futurelearn:
   name: Future Learn
   link: https://www.futurelearn.com/
+
+techsmith:
+  name: TechSmith
+  link: http://www.techsmith.com/
