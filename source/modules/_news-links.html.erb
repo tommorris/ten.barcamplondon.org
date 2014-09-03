@@ -2,11 +2,9 @@
   <section class="news-links">
     <h4><a href="/news/">Latest News</a></h4>
     <ul>
-      <% blog.articles[0...2].each do |article| %>
+      <% blog.articles[0..2].each do |article| %>
         <li><%= link_to article.title, article %></li>
       <% end %>
-      <% if blog.articles.size < 3 %><li><%= link_to 'Guide for first time speakers', '/guides/speaking-at-barcamp/' %></li><% end %>
-      <% if blog.articles.size < 2 %><li><%= link_to 'Essential information about BarCamp London X', '/guides/' %></li><% end %>
     </ul>
   </section>
 </div>
