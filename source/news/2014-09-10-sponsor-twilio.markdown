@@ -4,7 +4,7 @@ date: 2014-09-10 13:00 UTC
 tags:
 ---
 
-We’re pleased to present the thrid of our sponsors for BarCamp London X: Twilio.
+We’re pleased to present the third of our sponsors for BarCamp London X: Twilio.
 
 <img src="/images/sponsors/twilio2.png">
 
