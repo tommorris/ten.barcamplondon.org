@@ -10,4 +10,17 @@ We’re pleased to present you the first of our sponsors for BarCamp London X, o
 
 The Microsoft UK Developer Experience Team is excited to be hosting BarCamp LondonX in their central London HQ. They are looking forward to getting the chance to chat to you and keen to learn how they can help you with your start-up, app(s) and cloud based development. Follow them on Twitter [@msdevuk](https://twitter.com/msdevUK) and please do say hi to them over the weekend.
 
-They are also supporting a great event called [Native Summit](http://www.nativesummit.co.uk/), which is a half-day conference for iOS, Android and Windows developers and it's happening on the 9th of September at the Genesis Cinema in London. The team have managed to get free tickets for the BarCamp LondonX community. All you need to do is register for a ticket and use the code IMAVIP. However, space isn't endless, so make sure you secure your ticket now. If you want to read a bit more about what's going on in the day, including who we've got speaking, then check out the [Native Summit website](http://www.nativesummit.co.uk/).
+In the meantime, they are offering a bunch of great free opportunities to learn about Windows App development. Kicking off with a series of webinars, free in person workshops as well as a publish hack later this year. You are invited and it’s free to join one or all of the following:
+
+* [Windows Apps JumpStart Series Webinar for Non C#/XAML Developer](http://aka.ms/winappswebinar1) - Friday 7 Nov - 10AM – 11AM
+
+
+* [Windows Apps JumpStart Series Webinar for C#/XAML Developer](http://aka.ms/winappswebinar2) -
+Friday 7 Nov - 11AM – 12PM
+
+
+* [Windows Apps JumpStart Series Workshop](http://aka.ms/winappsworkshop) – Thursday 20 November – 9AM - 5PM (Lunch provided also)
+
+
+* [Windows Apps JumpStart Series Publish Hackathon](http://aka.ms/winappspublishhack) – Saturday 13 December – All Day
+
