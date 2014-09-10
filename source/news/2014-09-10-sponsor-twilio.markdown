@@ -6,7 +6,7 @@ tags:
 
 We’re pleased to present the thrid of our sponsors for BarCamp London X: Twilio.
 
-<img src="/images/sponsors/twilio.png">
+<img src="/images/sponsors/twilio2.png">
 
 [Twilio](http://twilio.com "Twilio") powers the future of business communications, enabling phones, VoIP, and messaging to be embedded into web, desktop, and mobile software. We take care of the messy telecom hardware and expose a globally available cloud API that developers can interact with to build intelligent and complex communications systems. As your app’s usage scales up or down, Twilio automatically scales with you.
 
