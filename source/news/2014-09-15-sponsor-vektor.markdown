@@ -14,4 +14,4 @@ This means we’re in a great position to help startups create or manage brand a
 
 vektor are also passionate about the digital revolution and use a variety of geeky web tools to make our clients projects succeed. These include [jeet.gs](http://jeet.gs/), [Gulp](http://gulpjs.com/), [Sass](http://sass-lang.com/), [Angular.js](https://angularjs.org/) and [Laravel](http://laravel.com/).
 
-We are honoured to help sponsor Barcamp London X and will be around over the weekend to participate on the grid, learn from awesome talks and help out with the Barcamp swag. Come and fine Pete or Tim over the weekend or follow us [@vektor](https://twitter.com/vektor)
+We are honoured to help sponsor Barcamp London X and will be around over the weekend to participate on the grid, learn from awesome talks and help out with the Barcamp swag. Come and find Pete or Tim over the weekend or follow us [@vektor](https://twitter.com/vektor)
