@@ -3,9 +3,9 @@ microsoft:
   link: http://microsoft.com/uk/
   premium: true
 
-paypal:
-  name: PayPal
-  link: http://developer.paypal.com/
+braintree:
+  name: Braintree
+  link: https://developers.braintreepayments.com/
   premium: true
 
 sendgrid:

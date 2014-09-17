@@ -6,7 +6,7 @@ tags:
 
 We’re pleased to present you the second of our sponsors for BarCamp London X: the Developer Relations team at PayPal + Braintree.
 
-<img src="/images/sponsors/paypal.png">
+<img src="/images/sponsors/braintree.png">
 
 The team at PayPal + Braintree are very happy to be sponsoring and attending BarCamp London X. Their team is both lending us Cristiano, one of our organizers, and sponsoring the Saturday party. They’re really looking forward to attend as for some of them it will be their first BarCamp. Follow them on [@paypaldev](https://twitter.com/PayPalDev) and please make sure to have a drink with them at the party.
 
