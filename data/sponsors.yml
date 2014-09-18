@@ -1,20 +1,20 @@
 microsoft:
   name: Microsoft
-  link: http://microsoft.com/uk/
+  link: /news/2014/09/01/sponsor-microsoft.html
   premium: true
 
 braintree:
   name: Braintree
-  link: https://developers.braintreepayments.com/
+  link: /news/2014/09/03/sponsor-paypal.html
   premium: true
 
 sendgrid:
   name: SendGrid
-  link: http://sendgrid.com/
+  link: /news/2014/09/11/sponsor-sendgrid.html
 
 twilio:
   name: twilio
-  link: http://www.twilio.com/
+  link: /news/2014/09/10/sponsor-twilio.html
 
 proactive:
   name: Proactive
@@ -26,7 +26,7 @@ dxw:
 
 vektor:
   name: vektor
-  link: http://vektor.co.uk/
+  link: /news/2014/09/15/sponsor-vektor.html
 
 futurelearn:
   name: FutureLearn
