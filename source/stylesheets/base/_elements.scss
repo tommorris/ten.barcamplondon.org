@@ -106,6 +106,8 @@ article {
       }
     }
 
+    &.logo img { border: 0 }
+
     figcaption {
       text-align: right;
       color: $secondary;

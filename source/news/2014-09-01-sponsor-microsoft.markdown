@@ -6,7 +6,7 @@ tags:
 
 We’re pleased to present you the first of our sponsors for BarCamp London X, our lovely hosts: the Microsoft UK Developer Experience Team.
 
-<img src="/images/sponsors/microsoft.png">
+<figure class="logo"><img src="/images/sponsors/microsoft.png"></figure>
 
 The Microsoft UK Developer Experience Team is excited to be hosting BarCamp LondonX in their central London HQ. They are looking forward to getting the chance to chat to you and keen to learn how they can help you with your start-up, app(s) and cloud based development. Follow them on Twitter [@msdevuk](https://twitter.com/msdevUK) and please do say hi to them over the weekend.
 

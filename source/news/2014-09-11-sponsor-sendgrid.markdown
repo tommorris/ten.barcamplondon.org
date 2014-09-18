@@ -6,9 +6,9 @@ tags:
 
 We’re pleased to present the fourth of our sponsors for BarCamp London X: SendGrid.
 
-<img src="/images/sponsors/sendgrid.png">
+<figure class="logo"><img src="/images/sponsors/sendgrid.png"></figure>
 
-SendGrid is super chuffed to be a part of the 10th Barcamp London. Over the weekend you'll see both Robin Johnson (@rbin) of our EMEA Developer Relations team, and our kick-ass SendGrid platform ambassador Alex Reed. They'll be mingling around food, scrambling to give talks and best of all, they'll be loaded up with swag and stickers so make sure you say hello.
+SendGrid is super chuffed to be a part of the 10th BarCamp London. Over the weekend you'll see both Robin Johnson (@rbin) of our EMEA Developer Relations team, and our kick-ass SendGrid platform ambassador Alex Reed. They'll be mingling around food, scrambling to give talks and best of all, they'll be loaded up with swag and stickers so make sure you say hello.
 
 SendGrid launched in 2009 after graduating from the Techstars accelerator program in Boulder, Colorado and has just celebrated 5 years as the leading API for sending transactional emails. If you've ever received an email from Uber, Pinterest, Spotify, Songkick or Booking.com, it was SendGrid that sent it to you, and that's just some of the enormous amount of email we send in a month.
 
